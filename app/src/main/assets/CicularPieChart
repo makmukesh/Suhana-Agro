@@ -1,0 +1,347 @@
+private PieChart mChart1, mChart2, mChart3, mChart4, mChart5, mChart6, mChart7, mChart8, mChart9;
+private PieChart mChart;
+
+  public static final int[] MATERIAL_COLORS = {rgb("#2ecc71"), rgb("#f1c40f")};
+
+
+    public static int rgb(String hex) {
+          int color = (int) Long.parseLong(hex.replace("#", ""), 16);
+          int r = (color >> 16) & 0xFF;
+          int g = (color >> 8) & 0xFF;
+          int b = (color >> 0) & 0xFF;
+          return Color.rgb(r, g, b);
+      }
+
+    public int[] MATERIAL_COLORS_Master = {
+              rgb("#2ecc71"), rgb("#f1c40f"), rgb("#ea5b02"), rgb("#3498db")
+      };
+
+
+
+
+
+        mChart = (PieChart) findViewById(R.id.MasterChart);
+
+        mChart.setUsePercentValues(false);
+        mChart.setExtraOffsets(5, 10, 5, 5);
+        mChart.setDragDecelerationFrictionCoef(0.99f);
+        mChart.setCenterTextTypeface(mTfRegular);
+        mChart.setCenterText("\n\nTotal\nIncome");
+        mChart.setCenterTextSize(18f);
+        mChart.setHoleColor(Color.WHITE);
+        mChart.setHoleRadius(75f);
+
+        mChart.animateY(1400, Easing.EasingOption.EaseInOutQuad);
+
+        mChart.setEntryLabelColor(Color.BLACK);
+        mChart.setEntryLabelTypeface(mTfRegular);
+        mChart.setEntryLabelTextSize(12f);
+        mChart.setMaxAngle(360f);
+        mChart.setRotationAngle(0f);
+
+        mChart.setDrawHoleEnabled(true);
+        mChart.setDrawCenterText(true);
+        mChart.setTouchEnabled(true);
+        mChart.setRotationEnabled(true);
+        mChart.setHighlightPerTapEnabled(false);
+        mChart.getDescription().setEnabled(false);
+        mChart.setDrawEntryLabels(false);
+
+        mChart.getLegend().setEnabled(false);
+
+
+////////////////////////////////////////////
+
+public void initiatePieCharts() {
+
+        mChart1 = (PieChart) findViewById(R.id.chart1);
+        mChart2 = (PieChart) findViewById(R.id.chart2);
+        mChart3 = (PieChart) findViewById(R.id.chart3);
+        mChart4 = (PieChart) findViewById(R.id.chart4);
+        mChart5 = (PieChart) findViewById(R.id.chart5);
+        mChart6 = (PieChart) findViewById(R.id.chart6);
+        mChart7 = (PieChart) findViewById(R.id.chart7);
+        mChart8 = (PieChart) findViewById(R.id.chart8);
+        mChart9 = (PieChart) findViewById(R.id.chart9);
+
+        mChart1.setUsePercentValues(false);
+        mChart1.setExtraOffsets(5, 10, 5, 5);
+        mChart1.setDragDecelerationFrictionCoef(0.95f);
+        mChart1.setCenterTextTypeface(mTfRegular);
+        mChart1.setCenterTextSize(18f);
+        mChart1.setDrawHoleEnabled(true);
+        mChart1.setHoleColor(Color.TRANSPARENT);
+        mChart1.setHoleRadius(85f);
+        mChart1.animateY(1400, Easing.EasingOption.EaseInOutQuad);
+        mChart1.setEntryLabelColor(Color.BLACK);
+        mChart1.setEntryLabelTypeface(mTfRegular);
+        mChart1.setEntryLabelTextSize(12f);
+        mChart1.setTouchEnabled(false);
+        mChart1.setRotationEnabled(false);
+        mChart1.setMaxAngle(180f);
+        mChart1.setRotationAngle(180f);
+        mChart1.setDrawCenterText(true);
+        mChart1.setHighlightPerTapEnabled(false);
+        mChart1.getDescription().setEnabled(false);
+        mChart1.setDrawEntryLabels(false);
+        mChart1.getLegend().setEnabled(false);
+        mChart1.setCenterText("Total Joinings\n\n\n");
+
+
+        mChart2.setUsePercentValues(false);
+        mChart2.setCenterTextSize(18f);
+        mChart2.setExtraOffsets(5, 10, 5, 5);
+        mChart2.setDragDecelerationFrictionCoef(0.95f);
+        mChart2.setCenterTextTypeface(mTfRegular);
+        mChart2.setDrawHoleEnabled(true);
+        mChart2.setHoleColor(Color.TRANSPARENT);
+        mChart2.setHoleRadius(85f);
+        mChart2.animateY(1400, Easing.EasingOption.EaseInOutQuad);
+        mChart2.setEntryLabelColor(Color.BLACK);
+        mChart2.setEntryLabelTypeface(mTfRegular);
+        mChart2.setEntryLabelTextSize(12f);
+        mChart2.setDrawCenterText(true);
+        mChart2.setTouchEnabled(true);
+        mChart2.setRotationEnabled(false);
+        mChart2.setMaxAngle(180f);
+        mChart2.setRotationAngle(180f);
+        mChart2.setHighlightPerTapEnabled(false);
+        mChart2.getDescription().setEnabled(false);
+        mChart2.setDrawEntryLabels(false);
+        mChart2.getLegend().setEnabled(false);
+        mChart2.setCenterText("Total Paid Joinings\n\n\n");
+
+
+        mChart3.setUsePercentValues(false);
+        mChart3.setExtraOffsets(5, 10, 5, 5);
+        mChart3.setDragDecelerationFrictionCoef(0.95f);
+        mChart3.setCenterTextSize(18f);
+        mChart3.setCenterTextTypeface(mTfRegular);
+        mChart3.setDrawHoleEnabled(true);
+        mChart3.setHoleColor(Color.TRANSPARENT);
+        mChart3.setHoleRadius(85f);
+        mChart3.animateY(1400, Easing.EasingOption.EaseInOutQuad);
+        mChart3.setEntryLabelColor(Color.BLACK);
+        mChart3.setEntryLabelTypeface(mTfRegular);
+        mChart3.setEntryLabelTextSize(12f);
+        mChart3.setDrawCenterText(true);
+        mChart3.setTouchEnabled(true);
+        mChart3.setRotationEnabled(false);
+        mChart3.setMaxAngle(180f);
+        mChart3.setRotationAngle(180f);
+        mChart3.setHighlightPerTapEnabled(false);
+        mChart3.getDescription().setEnabled(false);
+        mChart3.setDrawEntryLabels(false);
+        mChart3.getLegend().setEnabled(false);
+        mChart3.setCenterText("Total PV\n\n\n");
+
+
+        mChart4.setCenterTextSize(18f);
+        mChart4.setUsePercentValues(false);
+        mChart4.setExtraOffsets(5, 10, 5, 5);
+        mChart4.setDragDecelerationFrictionCoef(0.95f);
+        mChart4.setCenterTextTypeface(mTfRegular);
+        mChart4.setDrawHoleEnabled(true);
+        mChart4.setHoleColor(Color.TRANSPARENT);
+        mChart4.setHoleRadius(85f);
+        mChart4.animateY(1400, Easing.EasingOption.EaseInOutQuad);
+        mChart4.setEntryLabelColor(Color.BLACK);
+        mChart4.setEntryLabelTypeface(mTfRegular);
+        mChart4.setEntryLabelTextSize(12f);
+        mChart4.setTouchEnabled(false);
+        mChart4.setRotationEnabled(false);
+        mChart4.setMaxAngle(180f);
+        mChart4.setRotationAngle(180f);
+        mChart4.setDrawCenterText(true);
+        mChart4.setHighlightPerTapEnabled(false);
+        mChart4.getDescription().setEnabled(false);
+        mChart4.setDrawEntryLabels(false);
+        mChart4.getLegend().setEnabled(false);
+        mChart4.setCenterText("Total Joinings\n\n\n");
+
+
+        mChart5.setUsePercentValues(false);
+        mChart5.setExtraOffsets(5, 10, 5, 5);
+        mChart5.setDragDecelerationFrictionCoef(0.95f);
+        mChart5.setCenterTextTypeface(mTfRegular);
+        mChart5.setDrawHoleEnabled(true);
+        mChart5.setHoleColor(Color.TRANSPARENT);
+        mChart5.setHoleRadius(85f);
+        mChart5.animateY(1400, Easing.EasingOption.EaseInOutQuad);
+        mChart5.setEntryLabelColor(Color.BLACK);
+        mChart5.setEntryLabelTypeface(mTfRegular);
+        mChart5.setEntryLabelTextSize(12f);
+        mChart5.setDrawCenterText(true);
+        mChart5.setTouchEnabled(true);
+        mChart5.setRotationEnabled(false);
+        mChart5.setMaxAngle(180f);
+        mChart5.setRotationAngle(180f);
+        mChart5.setHighlightPerTapEnabled(false);
+        mChart5.getDescription().setEnabled(false);
+        mChart5.setDrawEntryLabels(false);
+        mChart5.getLegend().setEnabled(false);
+        mChart5.setCenterTextSize(18f);
+        mChart5.setCenterText("Total Paid Joinings\n\n\n");
+
+
+        mChart6.setUsePercentValues(false);
+        mChart6.setExtraOffsets(5, 10, 5, 5);
+        mChart6.setDragDecelerationFrictionCoef(0.95f);
+        mChart6.setCenterTextTypeface(mTfRegular);
+        mChart6.setDrawHoleEnabled(true);
+        mChart6.setHoleColor(Color.TRANSPARENT);
+        mChart6.setHoleRadius(85f);
+        mChart6.animateY(1400, Easing.EasingOption.EaseInOutQuad);
+        mChart6.setEntryLabelColor(Color.BLACK);
+        mChart6.setEntryLabelTypeface(mTfRegular);
+        mChart6.setEntryLabelTextSize(12f);
+        mChart6.setDrawCenterText(true);
+        mChart6.setTouchEnabled(true);
+        mChart6.setRotationEnabled(false);
+        mChart6.setMaxAngle(180f);
+        mChart6.setRotationAngle(180f);
+        mChart6.setHighlightPerTapEnabled(false);
+        mChart6.getDescription().setEnabled(false);
+        mChart6.setDrawEntryLabels(false);
+        mChart6.getLegend().setEnabled(false);
+        mChart6.setCenterTextSize(18f);
+        mChart6.setCenterText("Total PV\n\n\n");
+
+
+        mChart7.setUsePercentValues(false);
+        mChart7.setExtraOffsets(5, 10, 5, 5);
+        mChart7.setDragDecelerationFrictionCoef(0.95f);
+        mChart7.setCenterTextTypeface(mTfRegular);
+        mChart7.setDrawHoleEnabled(true);
+        mChart7.setHoleColor(Color.TRANSPARENT);
+        mChart7.setHoleRadius(85f);
+        mChart7.animateY(1400, Easing.EasingOption.EaseInOutQuad);
+        mChart7.setEntryLabelColor(Color.BLACK);
+        mChart7.setEntryLabelTypeface(mTfRegular);
+        mChart7.setEntryLabelTextSize(12f);
+        mChart7.setTouchEnabled(false);
+        mChart7.setRotationEnabled(false);
+        mChart7.setMaxAngle(180f);
+        mChart7.setRotationAngle(180f);
+        mChart7.setDrawCenterText(true);
+        mChart7.setHighlightPerTapEnabled(false);
+        mChart7.getDescription().setEnabled(false);
+        mChart7.setDrawEntryLabels(false);
+        mChart7.getLegend().setEnabled(false);
+        mChart7.setCenterTextSize(18f);
+        mChart7.setCenterText("Total Joinings\n\n\n");
+
+
+        mChart8.setUsePercentValues(false);
+        mChart8.setExtraOffsets(5, 10, 5, 5);
+        mChart8.setDragDecelerationFrictionCoef(0.95f);
+        mChart8.setCenterTextTypeface(mTfRegular);
+        mChart8.setDrawHoleEnabled(true);
+        mChart8.setHoleColor(Color.TRANSPARENT);
+        mChart8.setHoleRadius(85f);
+        mChart8.animateY(1400, Easing.EasingOption.EaseInOutQuad);
+        mChart8.setEntryLabelColor(Color.BLACK);
+        mChart8.setEntryLabelTypeface(mTfRegular);
+        mChart8.setEntryLabelTextSize(12f);
+        mChart8.setDrawCenterText(true);
+        mChart8.setTouchEnabled(true);
+        mChart8.setRotationEnabled(false);
+        mChart8.setMaxAngle(180f);
+        mChart8.setRotationAngle(180f);
+        mChart8.setHighlightPerTapEnabled(false);
+        mChart8.getDescription().setEnabled(false);
+        mChart8.setDrawEntryLabels(false);
+        mChart8.getLegend().setEnabled(false);
+        mChart8.setCenterTextSize(18f);
+        mChart8.setCenterText("Total Paid Joinings\n\n\n");
+
+        mChart9.setUsePercentValues(false);
+        mChart9.setExtraOffsets(5, 10, 5, 5);
+        mChart9.setDragDecelerationFrictionCoef(0.95f);
+        mChart9.setCenterTextTypeface(mTfRegular);
+        mChart9.setDrawHoleEnabled(true);
+        mChart9.setHoleColor(Color.TRANSPARENT);
+        mChart9.setHoleRadius(85f);
+        mChart9.animateY(1400, Easing.EasingOption.EaseInOutQuad);
+        mChart9.setEntryLabelColor(Color.BLACK);
+        mChart9.setEntryLabelTypeface(mTfRegular);
+        mChart9.setEntryLabelTextSize(12f);
+        mChart9.setDrawCenterText(true);
+        mChart9.setTouchEnabled(true);
+        mChart9.setRotationEnabled(false);
+        mChart9.setMaxAngle(180f);
+        mChart9.setRotationAngle(180f);
+        mChart9.setHighlightPerTapEnabled(false);
+        mChart9.getDescription().setEnabled(false);
+        mChart9.setDrawEntryLabels(false);
+        mChart9.getLegend().setEnabled(false);
+        mChart9.setCenterTextSize(18f);
+        mChart9.setCenterText("Total PV\n\n\n");
+        }
+
+private void setData(float value1, float value2, float value3, float value4) {
+
+        ArrayList<PieEntry> entries = new ArrayList<PieEntry>();
+        entries.add(new PieEntry(value1, ""));
+        entries.add(new PieEntry(value2, ""));
+        entries.add(new PieEntry(value3, ""));
+        entries.add(new PieEntry(value4, ""));
+
+        PieDataSet dataSet = new PieDataSet(entries, "");
+        dataSet.setSliceSpace(2f);
+
+        ArrayList<Integer> colors = new ArrayList<Integer>();
+
+        for (int c : MATERIAL_COLORS_Master)
+        colors.add(c);
+
+        dataSet.setColors(colors);
+
+        PieData data = new PieData(dataSet);
+        data.setValueTextSize(12f);
+        data.setValueTextColor(Color.BLACK);
+        data.setValueTypeface(mTfRegular);
+        data.setDrawValues(false);
+        mChart.setData(data);
+
+        mChart.highlightValues(null);
+        mChart.invalidate();
+        }
+
+
+
+private void setData(float A, float B, PieChart chart) {
+        ArrayList<PieEntry> entries = new ArrayList<PieEntry>();
+        entries.add(new PieEntry(A, "Team A"));
+        entries.add(new PieEntry(B, "Team B"));
+
+        PieDataSet dataSet = new PieDataSet(entries, "");
+        dataSet.setSliceSpace(2f);
+
+        ArrayList<Integer> colors = new ArrayList<Integer>();
+
+        for (int c : MATERIAL_COLORS)
+        colors.add(c);
+
+        dataSet.setColors(colors);
+
+        PieData data = new PieData(dataSet);
+        data.setValueTextSize(11f);
+        data.setValueTextColor(Color.BLACK);
+        data.setValueTypeface(mTfLight);
+        data.setDrawValues(false);
+        chart.setData(data);
+
+        chart.highlightValues(null);
+        chart.invalidate();
+        }
+
+
+
+
+          <com.github.mikephil.charting.charts.PieChart
+                                android:id="@+id/chart1"
+                                android:visibility="gone"
+                                android:layout_width="match_parent"
+                                android:layout_height="300dp"
+                                android:layout_marginBottom="-180dp" />

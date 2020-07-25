@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:keep="@layout/layout_customer_list">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="false"
+            android:nestedScrollingEnabled="true"
+            android:background="@android:color/white"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView android:fontFamily="@font/opensans_regular"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_gravity="center"
+                    android:background="@color/app_color_white"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Customer Detail"
+                    android:textAllCaps="true"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/app_color_black"
+                    tools:ignore="Deprecated,HardcodedText" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/color_green_text" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight=".7"
+                    android:background="@android:color/white"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+
+                    <TextView android:fontFamily="@font/opensans_regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="From Date"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView android:fontFamily="@font/opensans_regular"
+                        android:id="@+id/txt_from_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edittext_bottom_line"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"
+                        android:visibility="visible" />
+
+                    <TextView android:fontFamily="@font/opensans_regular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="To Date"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp"
+                        android:visibility="visible"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView android:fontFamily="@font/opensans_regular"
+                        android:id="@+id/txt_to_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edittext_bottom_line"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"
+                        android:visibility="visible" />
+
+
+                    <Button android:fontFamily="@font/opensans_regular"
+                        android:id="@+id/btn_proceed"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/round_rectangle_green"
+                        android:focusableInTouchMode="false"
+                        android:text="Search"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        tools:ignore="HardcodedText" />
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_showData"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView android:fontFamily="@font/opensans_regular"
+                            android:id="@+id/txt_count"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:textColor="@color/color__bg_orange"
+                            android:textSize="14sp"
+                            android:visibility="visible" />
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="none"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TableLayout
+                                    android:id="@+id/displayLinear"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="#dddddd"
+                                    android:orientation="vertical"
+                                    android:paddingBottom="1dp"
+                                    android:paddingEnd="1dp"
+                                    android:paddingLeft="1dp"
+                                    android:paddingRight="1dp"
+                                    android:paddingStart="1dp"
+                                    android:paddingTop="1dp"></TableLayout>
+
+
+                            </LinearLayout>
+
+                        </HorizontalScrollView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
+

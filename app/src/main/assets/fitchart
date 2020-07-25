@@ -1,0 +1,14 @@
+ FitChart fitChartincome;
+
+  Collection<FitChartValue> values = new ArrayList<>();
+
+     fitChartincome = (FitChart) findViewById(R.id.fitChartIncome);
+
+      values.add(new FitChartValue(value1, 0xFF950285));
+                         values.add(new FitChartValue(value2, 0xFFe60206));
+                         values.add(new FitChartValue(value3, 0xFFea5b02));
+                         values.add(new FitChartValue(value4, 0xFFf28f02));
+
+
+                          fitChartincome.setMaxValue((value1 + value2 + value3 + value4));
+                                             fitChartincome.setValues(values);

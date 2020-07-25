@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#83a13a</color>
+    <color name="colorPrimaryDark">#025487</color>
+    <color name="colorAccent">#0279b3</color>
+
+    <color name="app_color_green_one">#0279b3</color>
+
+    <color name="color_green_text">#0279b3</color>
+    <color name="color__bg_orange">#0279b3</color>
+
+    <color name="background_color_text_grey">#eeeeee</color>
+    <color name="color_text_grey">#626262</color>
+
+    <!--Color Related to Home-->
+    <color name="color_bg_product_images">#f7f7f7</color>
+  <color name="color_border_product_images">#dddddd</color>
+
+
+    <color name="app_color_white">#FFFFFF</color>
+    <color name="app_color_black">#000000</color>
+
+
+    <color name="HPFontColorDarkGrey">#3a3a3a</color>
+    <color name="HPFontColorBlue">#0096D9</color>
+    <color name="HPFontColorWhite">#FFFFFF</color>
+    <color name="HPFontColorDarkBlue">#007eba</color>
+    <color name="HPLightGreyBackground">#EFEFF4</color>
+    <color name="HPFontColorCarbonGrey">#333333</color>
+    <color name="HPFontColorGrey">#8F8F95</color>
+    <color name="HPFontColorLightGrey">#61E3E3EC</color>
+    <color name="PrintPreviewBG">#2c363c</color>
+
+    <color name="PluginMGDividerColor">#9B9B9B</color>
+    <color name="PluginBtnColorBlue">#00849D</color>
+    <color name="PluginToolbarBKColor">#00A5C4</color>
+    <color name="PluginSubTitleBKColorGrey">#F2F1F2</color>
+    <color name="PluginFontColorBlack">#000000</color>
+    <color name="PluginNameFontColor">#333333</color>
+    <color name="PluginMakerFontColor">#959595</color>
+    <color name="PluginListViewDividerColor">#FFEFEEEE</color>
+
+</resources>

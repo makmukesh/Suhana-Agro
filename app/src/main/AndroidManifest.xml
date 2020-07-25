@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vpipl.suhanaagro">
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/app_icon"
+        android:largeHeap="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+
+        <activity
+            android:name=".Splash_Activity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Login_Activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Register_Activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Register_agent_Activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Customer_List_activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Agent_List_activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Payment_receipt_report_activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Agent_wise_down_agent_activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Agent_wise_down_customer_activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ROI_detail_activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ROI_summary_report_activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".HomeActivity_Static"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".print.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Send_Query_Activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Agent_commission_detail_activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Agent_commission_report_activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Change_Password_Activity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ShareActivity" />
+
+        <activity
+            android:name=".Receipt_Activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Purchase_Detail_Report_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Purchase_Summary_Report_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Wallet_Report_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+          <activity
+            android:name=".Upgrade_Report_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+          <activity
+            android:name=".Stock_Report_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+          <activity
+            android:name=".Business_plan_Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".service.GetDataService" />
+
+    </application>
+</manifest>
